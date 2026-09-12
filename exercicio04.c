@@ -1,0 +1,72 @@
+#include <stdio.h>
+
+int main()
+{
+    int matriz1[3][3];
+    int matriz2[3][3];
+    int soma[3][3];
+    int i, j;
+
+    printf("Digite os valores da primeira matriz:\n");
+
+    for (i = 0; i < 3; i++)
+    {
+        for (j = 0; j < 3; j++)
+        {
+            scanf("%d", &matriz1[i][j]);
+        }
+    }
+
+    printf("\nDigite os valores da segunda matriz:\n");
+
+    for (i = 0; i < 3; i++)
+    {
+        for (j = 0; j < 3; j++)
+        {
+            scanf("%d", &matriz2[i][j]);
+        }
+    }
+
+    for (i = 0; i < 3; i++)
+    {
+        for (j = 0; j < 3; j++)
+        {
+            soma[i][j] = matriz1[i][j] + matriz2[i][j];
+        }
+    }
+
+    printf("\nPrimeira matriz:\n");
+
+    for (i = 0; i < 3; i++)
+    {
+        for (j = 0; j < 3; j++)
+        {
+            printf("%d\t", matriz1[i][j]);
+        }
+        printf("\n");
+    }
+
+    printf("\nSegunda matriz:\n");
+
+    for (i = 0; i < 3; i++)
+    {
+        for (j = 0; j < 3; j++)
+        {
+            printf("%d\t", matriz2[i][j]);
+        }
+        printf("\n");
+    }
+
+    printf("\nSoma das matrizes:\n");
+
+    for (i = 0; i < 3; i++)
+    {
+        for (j = 0; j < 3; j++)
+        {
+            printf("%d\t", soma[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
